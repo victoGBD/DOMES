@@ -1,0 +1,81 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #E4E2DD;
+  }
+
+  .transition-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E4E2DD;
+  }
+  
+  .Logo_transicao {
+    max-width: 300px;
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+  
+  header {
+    background-color: #E4E2DD;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    max-width: 100px;
+    margin-right: auto;
+  }
+  
+  .container {
+    margin-top: 80px; /* para dar espaço ao cabeçalho fixo */
+    padding: 20px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .imagem {
+    max-width: 300px;
+  }
+  
+  .texto {
+    max-width: calc(100% - 320px); /* considerando a largura da imagem */
+  }
+  
+  .carrossel-container {
+    margin-bottom: 20px;
+  }
+  
+  .carrossel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .comment {
+    flex: 0 0 auto;
+    min-width: 300px;
+    height: 400px; /* Altura fixa para as imagens dos comentários */
+    margin-right: 10px;
+    scroll-snap-align: start;
+  }
