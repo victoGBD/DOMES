@@ -1,86 +1,111 @@
+/* Global styles */
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    background-color: #E4E2DD;
-  }
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #E4E2DD;
+}
 
-  .transition-screen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #E4E2DD;
-  }
-  
-  .Logo_transicao {
-    max-width: 300px;
-  }
+.transition-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #E4E2DD;
+}
 
-  .hidden {
-    display: none;
-  }
-  
-  
-  header {
-    background-color: #E4E2DD;
-    color: #fff;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-  }
-  
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    max-width: 100px;
-    margin-right: auto;
-  }
-  
-  .container {
-    margin-top: 80px; /* para dar espaço ao cabeçalho fixo */
-    padding: 20px;
-  }
-  
-  .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .imagem {
-    max-width: 300px;
-  }
-  
-  .texto {
-    max-width: calc(100% - 320px); /* considerando a largura da imagem */
-  }
-  
-  .carrossel-container {
-    margin-bottom: 20px;
-  }
-  
-  .carrossel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-  }
-  
-  .comment {
-    flex: 0 0 auto;
-    min-width: 300px;
-    height: 400px; /* Altura fixa para as imagens dos comentários */
-    margin-right: 10px;
-    scroll-snap-align: start;
-  }
+.Logo_transicao {
+  max-width: 300px;
+}
 
-  .login-container {
+.hidden {
+  display: none;
+}
+
+header {
+  background-color: #E4E2DD;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttons-container .btn {
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.buttons-container .btn:hover {
+  background-color: #285f8f;
+}
+
+.container {
+  margin-top: 80px; /* for fixed header space */
+  padding: 20px;
+}
+
+/* Content styles */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.imagem {
+  max-width: 300px;
+}
+
+.texto {
+  max-width: calc(100% - 320px); /* considering image width */
+}
+
+/* Carrossel styles */
+.carrossel-container {
+  margin-bottom: 20px;
+}
+
+.carrossel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.comment {
+  flex: 0 0 auto;
+  min-width: 300px;
+  height: 400px; /* Fixed height for comment images */
+  margin-right: 10px;
+  scroll-snap-align: start;
+}
+
+/* Login styles */
+.login-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,4 +153,24 @@ input[type="email"], input[type="password"] {
   font-size: 14px;
   color: #666;
   margin-top: 20px;
+}
+
+/* Services list styles */
+.services {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services li {
+  margin-bottom: 10px;
+}
+
+.services li a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.services li a:hover {
+  color: #23527c;
 }
